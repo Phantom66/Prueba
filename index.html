@@ -1,0 +1,30 @@
+
+<html>
+		<head>
+			<title>Prueba OO</title>
+		</head>
+		<body>
+			<?
+				include 'classphp.php';
+
+				$nombrePersona = new PERSONA('Andres');
+				$nombrePersona->graficar();
+
+				$nombrePersona = new PERSONA('Pedro');
+				$nombrePersona->graficar();
+
+				$sumaOperadores = new SUMA();
+				$sumaOperadores->operadores(5,6);
+				$sumaOperadores->Operar();
+				$sumaOperadores->mostrarResultado();
+
+				$restaOperadores = new MULTIPLICAR();
+				$restaOperadores->operadores(8,6);
+				$restaOperadores->Operar();
+				$restaOperadores->mostrarResultado();
+
+
+			?>
+
+		</body>
+		</html>
